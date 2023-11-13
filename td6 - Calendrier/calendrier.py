@@ -1,5 +1,3 @@
-import textwrap 
-
 def nom_du_mois(mois):
     match mois:
         case 1:
@@ -34,11 +32,12 @@ def afficher_titre(mois, annee):
 def est_bissextile(annee):
     return ((annee%4 == 0) and (annee%100 != 0) or annee%400 == 0)
 
-def suite_numeros_jours(mois ,annee):
-    if(est_bissextile(annee) and mois == 2):
-        print("01 02 03 04 05 06 07\n08 09 10 11 12 13 14\n15 16 17 18 19 20 21\n22 23 24 25 26 27 28\n29")
+def suite_numeros_jours(mois, annee):
+    if est_bissextile(annee) and mois == 2:
+        return "01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29"
     else:
-        print("01 02 03 04 05 06 07\n08 09 10 11 12 13 14\n15 16 17 18 19 20 21\n22 23 24 25 26 27 28\n29 30 31")
+        return "01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+
  
 def numero_jour(jour, mois, annee):
     q = jour

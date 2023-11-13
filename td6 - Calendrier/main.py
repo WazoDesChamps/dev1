@@ -1,12 +1,11 @@
 import calendrier
+import textwrap
 
-jour = int(input("Jour: "))
 mois = int(input("Mois: "))
 annee = int(input("Année: "))
 
-print(calendrier.afficher_titre(mois, annee))
-print(20*'=')
+print(calendrier.afficher_titre(mois, annee) + "\n" + 20*'=')
 
-calendrier.suite_numeros_jours(mois,annee)
+suite_numeros = ((3 * calendrier.numero_jour(1, mois, annee)) * " " + calendrier.suite_numeros_jours(mois, annee))
 
-suite_numeros = 3 * calendrier.numero_jour(jour, mois, annee)
+print(textwrap.fill(suite_numeros, width=21))
