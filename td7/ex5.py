@@ -1,8 +1,7 @@
 import random
 
-nb_random = random.randint(1, 10)
+nb_random = random.randint(1, 100)
 compteur = 1
-print(nb_random)
 
 val = int(input("Trouvez une valeur entre 1 et 10: "))
 
