@@ -1,0 +1,1 @@
+dictionnaire = {"Arthur" : "Etudiant", "Daniel" : "Etudiant", "Maxime" : "Professeur", "Juilen" : "Professeur", "Sachar" : "Etudiant"}
