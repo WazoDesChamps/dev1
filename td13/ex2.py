@@ -36,3 +36,4 @@ print("cuv a", cpt, "groupe.")
 print(etudiants.get(52104, {}).get("groupe", {}))
 
 #▷ afficher tou·tes les enseignant·es de dev1 (sans doublons)
+print(set(profs_dev1.values()))
